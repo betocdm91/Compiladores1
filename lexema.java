@@ -45,7 +45,7 @@ class lexema
 			}while(!res.endsWith(" "));
 		}catch(IOException ioe)
 		{
-			System.out.println("Ocurrio la Sig. Excepcion " +ioe);
+			System.out.println("Ocurrio una Excepcion " +ioe);
 		}
 		longitud=res.length();
 		ch=new Character[longitud];
@@ -76,7 +76,7 @@ class lexema
 
 	public void esToken(Character ch[])
 	{
-		int ope=0;
+		int tok=0;
 		String cualesSon="";
 		for(int i=0;i<ch.length;i++)
 		{
@@ -84,12 +84,12 @@ class lexema
 			{
 				if(ch[i].equals(tokens[j]))
 				{
-					ope++;
+					tok++;
 					cualesSon+=ch[i].toString() + " ";	
 				}			
 			}
 		}
-	tipos out=new tipos(ope,"Tokens",cualesSon);
+	tipos out=new tipos(tok,"Operadores",cualesSon);
 	out.verTipos();
 	}
 
