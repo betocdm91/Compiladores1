@@ -109,7 +109,5 @@ class lexema
 	tipos out=new tipos(Id,"Identificadores",cualesSon);
 	out.verTipos();	
 	}
-
-	
 	
 }
