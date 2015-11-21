@@ -20,6 +20,6 @@ class analizador
 		prueba.esIdentificador(in);
 		prueba.esToken(in);
 		prueba.esDigito(in);
-	
+               
 	}
 }
