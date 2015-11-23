@@ -18,8 +18,7 @@ class lexema
 	
 	private Character tokens[]=  
 		{
-		'=','(',')','+','-','*','/',';','<','>'
-		};
+		'=','(',')','+','-','*','/',';','<','>'};
 	
 	private	Character au='x'; //aux digito identificador
 
